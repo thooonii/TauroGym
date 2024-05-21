@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
         total = 0; // Restablecer el valor de 'total' a cero
         limpiarHTML();
         actualizarPrecioTotal(); // Llamar a una función para actualizar el precio total
+        actualizarContadorCarrito();
       });
     }
 
