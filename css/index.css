@@ -145,6 +145,26 @@ header a {
   display: none;
 }
 
+.container-car-icon {
+  position: relative; 
+  display: inline-block; 
+}
+
+.contador-carrito {
+  position: absolute;
+  top: 55%;
+  right: 0;
+  left: 1rem;
+  background-color: #008cff;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
 /*Acomodar los elementos de nuestro carrito de compras*/
 .lista_de_clases div {
   display: none;
