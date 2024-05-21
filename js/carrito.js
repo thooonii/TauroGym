@@ -46,6 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (e.target.classList.contains("agregar-carrito")) {
         const claseSeleccionada = e.target.parentElement.parentElement;
         leerInfo(claseSeleccionada);
+        actualizarContadorCarrito();  
       }
     }
 
@@ -60,9 +61,16 @@ document.addEventListener("DOMContentLoaded", function () {
         );
 
         carritoHTML();
+        actualizarContadorCarrito();  
       }
     }
 
+    function actualizarContadorCarrito() {
+      const contadorCarrito = document.getElementById("contador-carrito");
+      // Actualizar el texto del contador con la longitud del arreglo de artículos
+      contadorCarrito.textContent = articulosCarrito.length; 
+    }
+    
     //Leer el contenido HTML al que le dimos click y extrae la info de la clase
     function leerInfo(clase) {
       //Crear un objeto con el contenido del clase actual
